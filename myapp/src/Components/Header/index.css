@@ -1,0 +1,27 @@
+.header{
+    height: 10vh;
+    width: 100vw;
+    background-color: #142e54;
+    display: flex;
+    align-items: center;
+}
+
+
+.nav-items-container{
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-items{
+    color: #eae6df;
+    font-size: 20px;
+}
+
+@media (min-width: 990px) {
+    .header{
+        height: 15vh;
+    }
+}
