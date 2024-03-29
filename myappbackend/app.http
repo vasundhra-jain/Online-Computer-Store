@@ -1,0 +1,31 @@
+
+GET http://localhost:3000/categories/
+
+###
+POST http://localhost:3000/categories/
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Laptop",
+  "quantity": 5,
+  "image": "https://img.freepik.com/free-psd/computer-isolated-transparent-background_191095-26224.jpg?w=740&t=st=1711557330~exp=1711557930~hmac=f74fe82aefada6cea117abaa65a35a18a392b03f92bb249e958ef79c7780766d",
+  "description": "At Ansuya Computers, we offer a wide variety of laptops to choose from, so you can find the perfect one for your needs and budget. Whether you are looking for a powerful gaming laptop, a lightweight ultrabook, or a budget-friendly student laptop, we have you covered."
+}
+
+###
+
+PUT http://localhost:3000/categories/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Laptop",
+  "quantity": 6,
+  "image": "https://img.freepik.com/free-psd/computer-isolated-transparent-background_191095-26224.jpg?w=740&t=st=1711557330~exp=1711557930~hmac=f74fe82aefada6cea117abaa65a35a18a392b03f92bb249e958ef79c7780766d",
+  "description": "At Ansuya Computers, we offer a wide variety of laptops to choose from, so you can find the perfect one for your needs and budget. Whether you are looking for a powerful gaming laptop, a lightweight ultrabook, or a budget-friendly student laptop, we have you covered."
+}
+
+###
+DELETE http://localhost:3000/categories/1
+

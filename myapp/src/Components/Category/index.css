@@ -1,0 +1,20 @@
+.category-item-container{
+    background-color: #142e54;
+    margin: 5px;
+    margin-top: 20px;
+    height: 40vh;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-item-image{
+    height: 100px;
+    margin: 10px;
+    background-color: #142e54;
+}
+
+.category-item-name{
+    color: #eae6df;
+}

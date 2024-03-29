@@ -37,6 +37,12 @@
     Home, Item Lists, Item Details, Shopping Cart, Checkout
 
 ### Third-party packages
+- ReactJs
+    - react-router-dom
+    - react-icons
 
-- react-router-dom
-- react-icons
+- NodeJs
+    - sqlite
+    - sqlite3
+    - nodemon
+    - bcrypt

@@ -1,5 +1,6 @@
 .home {
     background-color: #eae6df;
+    width: 100vw;
 }
 
 .home-banner-section {
@@ -45,3 +46,10 @@
     color: black;
 } 
 
+.home-category-section{
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
