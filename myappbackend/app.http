@@ -1,5 +1,32 @@
+POST http://localhost:3000/register/
+Content-Type: application/json
 
+{
+  "username": "vasu",
+  "name": "vasundhra",
+  "email": "vasu@gmail.com",
+  "password": "vasu123",
+  "gender": "female",
+  "contact_number": 567546454,
+  "address": "656,patel Nagar", 
+  "city": "goa",
+  "country": "India",
+  "age": 45 
+}
+
+###
+
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+  "username": "vasu",
+  "password": "vasu123"
+}
+
+###
 GET http://localhost:3000/categories/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InZhc3UiLCJpYXQiOjE3MTE3OTU2MjN9.iK0PTXYHmUPMX2ZcfYpXOO9jacy4tKU2aBpLiC60kno
 
 ###
 POST http://localhost:3000/categories/
@@ -29,3 +56,72 @@ Content-Type: application/json
 ###
 DELETE http://localhost:3000/categories/1
 
+###
+
+GET http://localhost:3000/products/
+
+###
+POST http://localhost:3000/products/
+Content-Type: application/json
+
+{
+  "id": 3,
+  "name": "Dell Laptop",
+  "category_name": "Laptop",
+  "quantity": 15,
+  "image": "https://img.freepik.com/free-photo/open-laptop_144627-12146.jpg?t=st=1711785813~exp=1711789413~hmac=aad9a08580b1957d6f14d1c04889f5357cc11919008977f5f361fe9617daa2dc&w=740",
+  "description": "The Dell laptop is a versatile computing device designed to meet the demands of both professional and personal users. With its sleek design and powerful performance capabilities, it offers a seamless computing experience for various tasks ranging from productivity to entertainment.",
+  "price": 10000
+}
+
+###
+
+PUT http://localhost:3000/products/1
+Content-Type: application/json
+
+{
+   "id": 1,
+  "name": "Dell Laptop",
+  "category_name": "Laptop",
+  "quantity": 10,
+  "image": "https://img.freepik.com/free-photo/open-laptop_144627-12146.jpg?t=st=1711785813~exp=1711789413~hmac=aad9a08580b1957d6f14d1c04889f5357cc11919008977f5f361fe9617daa2dc&w=740",
+  "description": "The Dell laptop is a versatile computing device designed to meet the demands of both professional and personal users. With its sleek design and powerful performance capabilities, it offers a seamless computing experience for various tasks ranging from productivity to entertainment.",
+  "price": 100000
+}
+
+###
+DELETE http://localhost:3000/products/5
+
+###
+
+GET http://localhost:3000/cart-products/
+
+###
+POST http://localhost:3000/cart-products/
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Dell Laptop",
+  "category_name": "Laptop",
+  "quantity": 15,
+  "image": "https://img.freepik.com/free-photo/open-laptop_144627-12146.jpg?t=st=1711785813~exp=1711789413~hmac=aad9a08580b1957d6f14d1c04889f5357cc11919008977f5f361fe9617daa2dc&w=740",
+  "description": "The Dell laptop is a versatile computing device designed to meet the demands of both professional and personal users. With its sleek design and powerful performance capabilities, it offers a seamless computing experience for various tasks ranging from productivity to entertainment.",
+  "price": 10000
+}
+
+###
+
+PUT http://localhost:3000/cart-products/1
+Content-Type: application/json
+
+{
+  "quantity": 5
+}
+
+###
+DELETE http://localhost:3000/cart-products/1
+
+###
+
+GET http://localhost:3000/filtered-products/?order=DESC&search_q=Laptop&limit=5

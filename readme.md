@@ -46,3 +46,4 @@
     - sqlite3
     - nodemon
     - bcrypt
+    - jsonwebtoken
